@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>演習：画像切り替え</title>
+    <style>
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+  <div id="app">
+    <img :src="imageUrl">
+
+    <button @click = "changeImage">画像を切り替える</button>
+  </div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

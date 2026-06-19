@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>真偽値属性：disabled の切り替え</title>
+</head>
+<body>
+    <div id="app">
+  <button :disabled="isDisabled">
+    送信
+  </button>
+
+  <button @click="isDosabled = !isDosabled">
+    状態変更
+  </button>
+</div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

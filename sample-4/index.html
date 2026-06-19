@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>オブジェクトで指定：ON/OFF切り替え</title>
+  <style>
+    .dark{
+        background: black;
+        color: white;
+        padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <p :class="{ dark : isDark }">
+        テーマ変更
+    </p>
+
+    <button @click="isDark = !isDark">
+        切り替え
+    </button>
+  </div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

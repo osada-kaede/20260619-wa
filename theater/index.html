@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>演習：映画館の座席予約</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+  <h1>映画館 座席予約</h1>
+
+  <div class="screen">SCREEN</div>
+  
+  <div class="seats">
+    <button
+      class="seat"
+      :class="{ reserved: seatA1 }"
+      :disabled="seatA1">
+      A1
+    </button>
+
+    <button
+      class="seat"
+      :class="{ reserved: seatA2 }"
+      :disabled="seatA2">
+      A2
+    </button>
+
+    <button
+      class="seat"
+      :class="{ reserved: seatA3 }"
+      :disabled="seatA3">
+      A3
+    </button>
+
+    <button
+      class="seat"
+      :class="{ reserved: seatA4 }"
+      :disabled="seatA4">
+      A4
+    </button>
+  </div><!-- /.seats -->
+
+  <!-- 凡例 -->
+  <div class="legend">
+    <p>□ 青：予約可能</p>
+    <p>■ 灰：予約済み</p>
+  </div>
+</div>  <!-- /.app -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
